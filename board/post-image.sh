@@ -104,6 +104,11 @@ __EOF__
 		;;
 	esac
 
+		# Add pi-mqtt-gpio config, it if exists
+		if [ -f "$BR2_EXTERNAL_PICAM_PATH/pi-mqtt-gpio.yaml" ]; then
+			cp "$BR2_EXTERNAL_PICAM_PATH/pi-mqtt-gpio.yaml" "${BINARIES_DIR}/pi-mqtt-gpio.yaml"
+		fi
+
 done
 
 # Pass an empty rootpath. genimage makes a full copy of the given rootpath to

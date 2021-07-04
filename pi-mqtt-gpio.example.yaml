@@ -1,0 +1,19 @@
+mqtt:
+  host: test.mosquitto.org
+  port: 1883
+  user: ""
+  password: ""
+  topic_prefix: showmewebcam/mydevice
+
+gpio_modules:
+  - name: raspberrypi
+    module: raspberrypi
+
+digital_inputs:
+  - name: onair
+    module: raspberrypi
+    pin: 21
+    on_payload: "ON"
+    off_payload: "OFF"
+    pullup: no
+    pulldown: yes

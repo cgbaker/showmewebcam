@@ -1,0 +1,13 @@
+[Unit]
+Description=Starts PI MQTT-GPIO
+ConditionFileNotEmpty=/root/mqtt.yaml
+
+[Service]
+ExecStart=/opt/pi-mqtt-gpio/start-mqtt-gpio.sh
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=pimqttgpio
+WorkingDirectory=/tmp
+
+[Install]
+WantedBy=basic.target
