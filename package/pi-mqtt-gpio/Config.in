@@ -1,7 +1,7 @@
 config BR2_PACKAGE_PIMQTTGPIO
 	bool "Raspberry Pi MQTT-GPIO Publisher"
-	select BR2_PACKAGE_LIBV4L_UTILS
+	select BR2_PACKAGE_PYTHON_PAHO_MQTT # runtime
+	select BR2_PACKAGE_PYTHON_PYYAML # runtime
 	help
-	  Install Raspberry Pi MQTT-GPIO Tool
-
-	  https://github.com/hpeyerl/pi-mqtt-gpio
+	  Expose the Raspberry Pi GPIO pins (and/or external IO modules such
+	  as.

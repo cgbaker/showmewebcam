@@ -11,7 +11,6 @@ PIMQTTGPIO_LICENSE_FILES = LICENSE
 PIMQTTGPIO_DEST_DIR = /opt/pi-mqtt-io
 PIMQTTGPIO_SITE_METHOD = git
 PIMQTTGPIO_INIT_SYSTEMD_TARGET = basic.target.wants
-PIMQTTGPIO_SETUP_TYPE=distutils
+PIMQTTGPIO_SETUP_TYPE = setuptools
 
 $(eval $(python-package))
-
