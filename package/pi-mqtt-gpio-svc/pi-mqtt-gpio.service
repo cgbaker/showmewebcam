@@ -1,6 +1,6 @@
 [Unit]
 Description=Starts PI MQTT-GPIO
-ConditionFileNotEmpty=/root/mqtt.yaml
+ConditionFileNotEmpty=/root/pi-mqtt-gpio.yaml
 
 [Service]
 ExecStart=/opt/pi-mqtt-gpio/start-mqtt-gpio.sh

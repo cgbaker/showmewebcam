@@ -1,0 +1,5 @@
+config BR2_PACKAGE_PI_MQTT_GPIO
+	bool "Raspberry Pi MQTT-GPIO Systemd service"
+	help
+	  Expose the Raspberry Pi GPIO pins (and/or external IO modules such
+	  as.

@@ -104,9 +104,11 @@ __EOF__
 		;;
 	esac
 
-		# Add pi-mqtt-gpio config, it if exists
+		# Add user pi-mqtt-gpio config, it if exists
 		if [ -f "$BR2_EXTERNAL_PICAM_PATH/pi-mqtt-gpio.yaml" ]; then
-			cp "$BR2_EXTERNAL_PICAM_PATH/pi-mqtt-gpio.yaml" "${BINARIES_DIR}/pi-mqtt-gpio.yaml"
+			cp  "$BR2_EXTERNAL_PICAM_PATH/pi-mqtt-gpio.yaml" "${BINARIES_DIR}/pi-mqtt-gpio.yaml"
+		else 
+			cp "$BR2_EXTERNAL_PICAM_PATH/package/pi-mqtt-gpio/pi-mqtt-gpio.default.yaml" "${BINARIES_DIR}/pi-mqtt-gpio.yaml"
 		fi
 
 done

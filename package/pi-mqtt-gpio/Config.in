@@ -1,7 +1,0 @@
-config BR2_PACKAGE_PIMQTTGPIO
-	bool "Raspberry Pi MQTT-GPIO Publisher"
-	select BR2_PACKAGE_PYTHON_PAHO_MQTT # runtime
-	select BR2_PACKAGE_PYTHON_PYYAML # runtime
-	help
-	  Expose the Raspberry Pi GPIO pins (and/or external IO modules such
-	  as.

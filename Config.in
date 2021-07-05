@@ -1,4 +1,5 @@
 source "$BR2_EXTERNAL_PICAM_PATH/package/piwebcam/Config.in"
 source "$BR2_EXTERNAL_PICAM_PATH/package/soft-hwclock/Config.in"
 source "$BR2_EXTERNAL_PICAM_PATH/package/camera-control/Config.in"
-source "$BR2_EXTERNAL_PICAM_PATH/package/pi-mqtt-gpio/Config.in"
+source "$BR2_EXTERNAL_PICAM_PATH/package/python-pi-mqtt-gpio/Config.in"
+source "$BR2_EXTERNAL_PICAM_PATH/package/pi-mqtt-gpio-svc/Config.in"

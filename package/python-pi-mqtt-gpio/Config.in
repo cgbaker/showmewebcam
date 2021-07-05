@@ -1,0 +1,4 @@
+config BR2_PACKAGE_PYTHON_PI_MQTT_GPIO
+	bool "python-pi-mqtt-gpio"
+	help
+	  https://github.com/hpeyerl/pi-mqtt-gpio
